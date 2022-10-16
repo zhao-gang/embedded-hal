@@ -9,9 +9,16 @@
 
 #![warn(missing_docs)]
 #![no_std]
-#![feature(type_alias_impl_trait)]
+#![cfg_attr(feature = "nightly", feature(type_alias_impl_trait))]
 
+#[cfg(feature = "nightly")]
 pub mod delay;
+
+#[cfg(feature = "nightly")]
 pub mod digital;
+
+#[cfg(feature = "nightly")]
 pub mod i2c;
+
+#[cfg(feature = "nightly")]
 pub mod spi;

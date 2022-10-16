@@ -15,3 +15,6 @@ version = "0.1.0-alpha.2"
 
 [dependencies]
 embedded-hal = { version = "=1.0.0-alpha.9", path = "../embedded-hal" }
+
+[features]
+nightly = []
